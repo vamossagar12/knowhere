@@ -67,6 +67,15 @@ constexpr const char* selectively_pruned_edge_size = "selectively_pruned_edge_si
 // NGT_ONNG Params
 constexpr const char* outgoing_edge_size = "outgoing_edge_size";
 constexpr const char* incoming_edge_size = "incoming_edge_size";
+
+// SCANN params
+constexpr const char* num_leaves = "num_leaves";
+constexpr const char* num_leaves_to_search = "num_leaves_to_search";
+constexpr const char* scoring = "scoring";
+constexpr const char* quantize = "quantize";
+constexpr const char* anisotropic_quantization_threshold = "anisotropic_quantization_threshold";
+constexpr const char* reordering_num_neighbors = "reordering_num_neighbors";
+
 }  // namespace IndexParams
 
 namespace Metric {

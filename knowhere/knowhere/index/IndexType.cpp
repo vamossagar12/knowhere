@@ -40,6 +40,7 @@ const char* INDEX_RHNSWSQ = "RHNSW_SQ";
 const char* INDEX_ANNOY = "ANNOY";
 const char* INDEX_NGTPANNG = "NGT_PANNG";
 const char* INDEX_NGTONNG = "NGT_ONNG";
+const char* INDEX_SCANN = "SCANN";
 }  // namespace IndexEnum
 
 }  // namespace knowhere

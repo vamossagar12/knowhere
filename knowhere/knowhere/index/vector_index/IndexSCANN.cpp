@@ -200,10 +200,10 @@ void Load(const BinarySet& index_binary) {
 }
 
 void
-IndexSCANN::Train(const DatasetPtr& dataset_ptr, const Config& config) {
+IndexSCANN::BuildAll(const DatasetPtr& dataset_ptr, const Config& config) {
     if (index_) {
         // it is built already
-        LOG_KNOWHERE_DEBUG_ << "IndexSCANN::Train: index_ has been built!";
+        LOG_KNOWHERE_DEBUG_ << "IndexSCANN::BuildAll: index_ has been built!";
         return;
     }
 

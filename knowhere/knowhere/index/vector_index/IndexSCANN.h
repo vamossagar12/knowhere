@@ -36,10 +36,14 @@ public:
     Load(const BinarySet& index_binary) override;
 
     void
-    BuildAll(const DatasetPtr& dataset_ptr, const Config& config) override;
+    BuildAll(const DatasetPtr& dataset_ptr, const Config& config) override {
+        KNOWHERE_THROW_MSG("Scann not support build item dynamically, please invoke BuildAll interface.");
+    }
  
     void
-    Train(const DatasetPtr& dataset_ptr, const Config& config) override;
+    Train(const DatasetPtr& dataset_ptr, const Config& config) override {
+        KNOWHERE_THROW_MSG("Incremental index is not supported");
+    }
  
     void
     AddWithoutIds(const DatasetPtr&, const Config&) override;
